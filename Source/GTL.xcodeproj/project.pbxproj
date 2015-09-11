@@ -797,7 +797,7 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "GTL" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1037,6 +1037,7 @@
 				DEAD_CODE_STRIPPING = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1124,6 +1125,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GTLUnitTests;
 				PRODUCT_NAME = GTLUnitTests;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				STRIP_STYLE = "non-global";
@@ -1151,6 +1153,7 @@
 					"-framework",
 					Cocoa,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GTLUnitTests;
 				PRODUCT_NAME = GTLUnitTests;
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				STRIP_STYLE = "non-global";
@@ -1162,6 +1165,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Resources/DevTestTool-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DevelopmentTestApplication;
 				PRODUCT_NAME = DevelopmentTestTool;
 			};
 			name = Debug;
@@ -1171,6 +1175,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Resources/DevTestTool-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.DevelopmentTestApplication;
 				PRODUCT_NAME = DevelopmentTestTool;
 			};
 			name = Release;
@@ -1178,7 +1183,6 @@
 		4F1C6E101027B3CF00B46459 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DGTL_IPHONE=1",
@@ -1191,7 +1195,6 @@
 		4F1C6E111027B3CF00B46459 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DGTL_IPHONE=1",
@@ -1219,6 +1222,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GTLFramework;
 				PRODUCT_NAME = GTL;
 				STRIP_STYLE = "non-global";
 			};
@@ -1242,6 +1246,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.GTLFramework;
 				PRODUCT_NAME = GTL;
 				STRIP_STYLE = "non-global";
 			};
