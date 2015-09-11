@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C770DC8545E70EB8982434DD36B5D63F4C14681B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C770DC8545E70EB8982434DD36B5D63F4C14681B" : 0,
+    "01306B52CC7A3E9A0960C24A8ACC856E4F2CBE16" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CBF2EBAC-2064-4789-BD4D-1D7597ACD749",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C770DC8545E70EB8982434DD36B5D63F4C14681B" : "google-api-objectivec-client\/",
+    "01306B52CC7A3E9A0960C24A8ACC856E4F2CBE16" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "GTL",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Source\/GTL.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/creationst\/CreationMusic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01306B52CC7A3E9A0960C24A8ACC856E4F2CBE16"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:creationst\/google-api-objectivec-client.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C770DC8545E70EB8982434DD36B5D63F4C14681B"
+    }
+  ]
+}
