@@ -33,7 +33,7 @@
 #if (!TARGET_OS_IPHONE && defined(MAC_OS_X_VERSION_10_11) && MAC_OS_X_VERSION_MAX_ALLOWED >= MAC_OS_X_VERSION_10_11) \
   || (TARGET_OS_IPHONE && defined(__IPHONE_9_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0)
   #ifndef GTM_USE_SESSION_FETCHER
-    #define GTM_USE_SESSION_FETCHER 1
+    #define GTM_USE_SESSION_FETCHER 0
   #endif
 #endif
 
@@ -65,6 +65,8 @@
 #import "GTLObject.h"
 #import "GTLQuery.h"
 #import "GTLUtilities.h"
+
+#import "GTMHTTPFetcher.h"
 
 // Error domains
 extern NSString *const kGTLServiceErrorDomain;
@@ -121,7 +123,8 @@ typedef BOOL (^GTLServiceRetryBlock)(GTLServiceTicket *ticket,
  @private
   NSOperationQueue *parseQueue_;
   NSString *userAgent_;
-  GTMBridgeFetcherService *fetcherService_;
+  GTMHTTPFetcherService *fetcherService_;
+//    GTMBridgeFetcherService *fetcherService_;
   NSString *userAgentAddition_;
 
   NSMutableDictionary *serviceProperties_; // initial values for properties in future tickets
@@ -435,7 +438,8 @@ typedef BOOL (^GTLServiceRetryBlock)(GTLServiceTicket *ticket,
 
 // The fetcher service object issues the fetcher instances
 // for this API service
-@property (nonatomic, retain) GTMBridgeFetcherService *fetcherService;
+@property (nonatomic, retain) GTMHTTPFetcherService *fetcherService;
+//@property (nonatomic, retain) GTMBridgeFetcherService *fetcherService;
 
 // Default storage for cookies is in the service object's fetchHistory.
 //
@@ -538,7 +542,8 @@ typedef BOOL (^GTLServiceRetryBlock)(GTLServiceTicket *ticket,
   NSMutableDictionary *ticketProperties_;
   NSDictionary *surrogates_;
 
-  GTMBridgeFetcher *objectFetcher_;
+  GTMHTTPFetcher *objectFetcher_;
+//    GTMBridgeFetcher *objectFetcher_;
   SEL uploadProgressSelector_;
   BOOL shouldFetchNextPages_;
   BOOL isRetryEnabled_;
@@ -579,7 +584,8 @@ typedef BOOL (^GTLServiceRetryBlock)(GTLServiceTicket *ticket,
 - (void)resumeUpload;
 - (BOOL)isUploadPaused;
 
-@property (nonatomic, retain) GTMBridgeFetcher *objectFetcher;
+@property (nonatomic, retain) GTMHTTPFetcher *objectFetcher;
+//@property (nonatomic, retain) GTMBridgeFetcher *objectFetcher;
 @property (nonatomic, assign) SEL uploadProgressSelector;
 
 // Services which do not require an user authorization may require a developer
@@ -633,7 +639,8 @@ typedef BOOL (^GTLServiceRetryBlock)(GTLServiceTicket *ticket,
 
 
 // Category to provide opaque access to tickets stored in fetcher properties
-@interface GTMBridgeFetcher (GTLServiceTicketAdditions)
+@interface GTMHTTPFetcher (GTLServiceTicketAdditions)
+//@interface GTMBridgeFetcher (GTLServiceTicketAdditions)
 - (id)ticket;
 @end
 

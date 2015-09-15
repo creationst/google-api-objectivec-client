@@ -4,55 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DevelopmentTestTool.xcscheme</key>
+		<key>GTMOAuth2.framework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>35</integer>
 		</dict>
-		<key>GTLFramework.xcscheme</key>
+		<key>GTMOAuth2NonGoogle.framework.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>27</integer>
+			<integer>36</integer>
 		</dict>
-		<key>GTLStaticLib.xcscheme</key>
+		<key>OAuthTouchNonGoogleStaticLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>37</integer>
+			<integer>34</integer>
 		</dict>
-		<key>GTLTouchStaticLib.xcscheme</key>
+		<key>OAuthTouchStaticLib.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>28</integer>
-		</dict>
-		<key>GTLUnitTests.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>29</integer>
+			<integer>33</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>11C6D8DF1BA6ECE1004F119B</key>
+		<key>4F724A7012248B19001A4AD0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F14A9DC0B1276B70072EBB8</key>
+		<key>4FC754EF13E77E25006A0C26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F1AD9010B71603F00DC0485</key>
+		<key>4FC754FB13E77E2B006A0C26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F1C6E0E1027B3CE00B46459</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4F38F6A50B66E91D00B24B81</key>
+		<key>D2AAC07D0554694100DB518D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
